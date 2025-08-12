@@ -3,9 +3,9 @@ This documentation is for SP Library
 ## Booting the Library
 ```lua
 local splib = loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/splibv2"))()
+```
 
 
----
 
 
 ## Creating a Window
@@ -30,3 +30,4 @@ ToggleIcon = <string> - URL to the image you want displayed on the toggle window
 ConfigFolder = <string> - The name of the folder where the configs are saved.
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
+```
