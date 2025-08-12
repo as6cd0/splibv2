@@ -1,7 +1,6 @@
 # SP Library v2
 This documentation is for SP Library
 # Booting the Library
-## 📦 التثبيت
+## Booting the Library
 ```lua
--- مثال تحميل من GitHub
-loadstring(game:HttpGet("https://raw.githubusercontent.com/USERNAME/REPO/main/library.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/splibv2"))()
