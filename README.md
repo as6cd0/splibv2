@@ -41,7 +41,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998"
 })
 
-
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
@@ -112,7 +111,6 @@ Tab:AddToggle({
 		print(Value)
 	end    
 })
-
 
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
@@ -228,7 +226,6 @@ Tab:AddTextbox({
   end    
 })
 
-
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
@@ -254,7 +251,6 @@ Tab:AddBind({
     print("pressWORLRLRLLL")
   end    
 })
-
 
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
