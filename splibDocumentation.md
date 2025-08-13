@@ -21,7 +21,7 @@ local Window = splib:MakeWindow({
  RainbowTitle = false,
  RainbowSubTitle = false,
  ToggleIcon = "rbxassetid://83114982417764",
- ConfigFolder = "SPHubConfigs",
+ ConfigFolder = "SP_Library",
  CloseCallback = true
 })
 
