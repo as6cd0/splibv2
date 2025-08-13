@@ -13,9 +13,13 @@ local splib = loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/
 ```lua
 local Window = splib:MakeWindow({
  Name = "SP Library v2",
+ SubTitle = "by splib",
  HidePremium = false,
  SaveConfig = true,
  Setting = true,
+ RainbowMainFrame = false,
+ RainbowTitle = false,
+ RainbowSubTitle = false,
  ToggleIcon = "rbxassetid://83114982417764",
  ConfigFolder = "SPHubConfigs",
  CloseCallback = true
@@ -23,9 +27,13 @@ local Window = splib:MakeWindow({
 
 --[[
 Name = <string> - The name of the UI.
+SubTitle = <string> - The sub name of the UI.
 HidePremium = <bool> - Whether or not the user details shows Premium status or not.
 SaveConfig = <bool> - Toggles the config saving in the UI.
-Setting = <bool> - Toggle to show the setting on the window
+Setting = <bool> - Toggle to show the setting on the window.
+RainbowMainFrame = <bool> - This if you want a RBG Stroke for MainFrame
+RainbowTitle = <bool> - This if you want a RBG Stroke for Title
+RainbowSubTitle = <bool> - This if you want a RBG Stroke for SubName
 ToggleIcon = <string> - URL to the image you want displayed on the toggle window.
 ConfigFolder = <string> - The name of the folder where the configs are saved.
 CloseCallback = <function> - Function to execute when the window is closed.
