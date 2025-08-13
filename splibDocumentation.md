@@ -341,6 +341,6 @@ Dropdown:Set("dropdown option")
 
 ## Destory the Gui
 ```lua
-splib:Destory
+splib:Destory()
 ```
 
