@@ -205,6 +205,27 @@ Slider:Set(2)
 Tab:AddLabel("Label")
 ```
 
+## Creating a ImageLabel
+
+```lua
+Tab:AddImageLabel({
+   IsMobile = false,
+   IsPC = false,
+   Name = "ImageLabel",
+   Desc = "What is this imagelabrl?",
+   Image = "rbxassetid://83114982417764",
+   Rainbow = false
+})
+
+--[[
+IsMobile = <bool> - This is if you want to view it on mobile only.
+IsPc = <bool> - This is if you want to view it on pc only.
+Name = <string> - The name of the textbox.
+Desc = <string> - This is to write a description of what he's doing.
+Image = <string> - This if you want add a image id.
+Rainbow = <bool> - This if you want a RBG Stroke for Image.
+]]
+
 ## Changing the value of an existing label
 ```lua
 Label:Set("Label Changed Value")
@@ -316,5 +337,10 @@ Dropdown:Select("dropdown option")
 ## Set a value from a dropdown option
 ```lua
 Dropdown:Set("dropdown option")
+```
+
+## Destory the Gui
+```lua
+splib:Destory
 ```
 
