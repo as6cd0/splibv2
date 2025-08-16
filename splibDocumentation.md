@@ -360,9 +360,9 @@ Dropdown:Set("dropdown option")
 
 ## Additional API
 ```lua
--- splib:GetIcon(name) -> returns rbxassetid or input
--- splib:SetTheme(name) -> change theme globally
--- splib:SetScale(number) -> adjust UIScale / UI sizing
--- splib:Destroy() -> destroys entire library UI and cleanup
+splib:GetIcon(name) -> returns rbxassetid or input
+splib:SetTheme(name) -> change theme globally
+splib:SetScale(number) -> adjust UIScale / UI sizing
+splib:Destroy() -> destroys entire library UI and cleanup
 ```
 
