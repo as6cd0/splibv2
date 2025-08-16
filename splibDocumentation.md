@@ -218,17 +218,36 @@ Tab:AddImageLabel({
 })
 
 --[[
-IsMobile = <bool> - This is if you want to view it on mobile only.
-IsPc = <bool> - This is if you want to view it on pc only.
-Name = <string> - The name of the textbox.
-Desc = <string> - This is to write a description of what he's doing.
-Image = <string> - This if you want add a image id.
-Rainbow = <bool> - This if you want a RBG Stroke for Image.
+IsMobile = <bool> - This is if you want to view it on mobile only
+IsPc = <bool> - This is if you want to view it on pc only
+Name = <string> - The name of the ImageLabel
+Desc = <string> - This is to write a description of what he's doing
+Image = <string> - This if you want add a image id
+Rainbow = <bool> - This if you want a RBG Stroke for Image
 ]]
+```
 
 ## Changing the value of an existing label
 ```lua
 Label:Set("Label Changed Value")
+```
+
+## Creating a DiscordInvite
+```lua
+Tab:AddDiscordInvite({
+   IsMobile = false,
+   IsPC = false,
+   Name = "Discord",
+   Desc = "Join our server",
+   Logo = "rbxassetid://123456",
+   Invite = "inviteCodeOrLink"
+})
+IsMobile = <bool> - This is if you want to view it on mobile only
+IsPc = <bool> - This is if you want to view it on pc only
+Name = <string> - The name of the DiscordInvite
+Desc = <string> - This is to write a description of what he's doing
+Logo = <string> - This for add your discord server logo
+Invite = <string> - This for add your discord server invite link
 ```
 
 ## Creating a Paragraph
@@ -301,8 +320,8 @@ Bind:Set(Enum.KeyCode.E)
 ## Creating a Dropdown
 ```lua
 Tab:AddDropdown({
-  IsMobile = false,
-  IsPC = false,
+    IsMobile = false,
+    IsPC = false,
     Name = "Dropdown",
     Desc = "What is this dropdown do?",
     Default = "1",
@@ -339,8 +358,11 @@ Dropdown:Select("dropdown option")
 Dropdown:Set("dropdown option")
 ```
 
-## Destory the Gui
+## Additional API
 ```lua
-splib:Destroy()
+-- splib:GetIcon(name) -> returns rbxassetid or input
+-- splib:SetTheme(name) -> change theme globally
+-- splib:SetScale(number) -> adjust UIScale / UI sizing
+-- splib:Destroy() -> destroys entire library UI and cleanup
 ```
 
