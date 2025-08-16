@@ -5,9 +5,6 @@ This documentation is for SP Library
 local splib = loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/splibv2"))()
 ```
 
-
-
-
 ## Creating a Window
 
 ```lua
@@ -43,10 +40,10 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ## Creating a Tab
 ```lua
 local Tab = Window:MakeTab({
- IsMobile = false,
- IsPC = false,
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998"
+  IsMobile = false,
+  IsPC = false,
+  Name = "Tab 1",
+  Icon = "rbxassetid://4483345998"
 })
 
 --[[
@@ -88,10 +85,10 @@ Time = <number> - The duration of the notfication.
 ## Creating a Button
 ```lua
 Tab:AddButton({
- IsMobile = false,
- IsPC = false,
-	Name = "Button",
- Desc = "What is this button do?",
+   IsMobile = false,
+   IsPC = false,
+   Name = "Button",
+   Desc = "What is this button do?",
 	Callback = function()
       		print("button pressed")
   	end    
@@ -109,12 +106,12 @@ Callback = <function> - The function of the button.
 ## Creating a Toggle
 ```lua
 Tab:AddToggle({
- IsMobile = false,
- IsPC = false,
-	Name = "Toggle",
- Desc = "What is this toggle do?",
-	Default = false,
- Flag = "ToggleSave",
+   IsMobile = false,
+   IsPC = false,
+   Name = "Toggle",
+   Desc = "What is this toggle do?",
+   Default = false,
+   Flag = "ToggleSave",
 	Callback = function(Value)
 		print(Value)
 	end    
@@ -140,11 +137,11 @@ Toggle:Set(true)
 ## Creating a Color Picker
 ```lua
 Tab:AddColorpicker({
- IsMobile = false,
- IsPC = false,
-	Name = "Colorpicker",
-	Default = Color3.fromRGB(255, 0, 0),
- Flag = "ColorpickerSave",
+  IsMobile = false,
+  IsPC = false,
+  Name = "Colorpicker",
+  Default = Color3.fromRGB(255, 0, 0),
+  Flag = "ColorpickerSave",
 	Callback = function(Value)
 		print(Value)
 	end	  
@@ -168,16 +165,16 @@ ColorPicker:Set(Color3.fromRGB(255,255,255))
 ## Creating a Slider
 ```lua
 Tab:AddSlider({
-  IsMobile = false,
-  IsPC = false,
-  Name = "Slider",
-  Min = 0,
-  Max = 20,
-  Increment = 1,
-  Default = 10,
-  ValueName = "string",
-  Flag = "SliderSave",
-  Callback = function(Value)
+   IsMobile = false,
+   IsPC = false,
+   Name = "Slider",
+   Min = 0,
+   Max = 20,
+   Increment = 1,
+   Default = 10,
+   ValueName = "string",
+   Flag = "SliderSave",
+   Callback = function(Value)
     print(Value)
   end    
 })
@@ -242,12 +239,15 @@ Tab:AddDiscordInvite({
    Logo = "rbxassetid://123456",
    Invite = "inviteCodeOrLink"
 })
+
+--[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
 Name = <string> - The name of the DiscordInvite
 Desc = <string> - This is to write a description of what he's doing
 Logo = <string> - This for add your discord server logo
 Invite = <string> - This for add your discord server invite link
+]]
 ```
 
 ## Creating a Paragraph
