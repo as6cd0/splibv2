@@ -23,17 +23,17 @@ local Window = splib:MakeWindow({
 })
 
 --[[
-Name = <string> - The name of the UI.
-SubTitle = <string> - The sub name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-Setting = <bool> - Toggle to show the setting on the window.
+Name = <string> - The name of the UI
+SubTitle = <string> - The sub name of the UI
+HidePremium = <bool> - Whether or not the user details shows Premium status or not
+SaveConfig = <bool> - Toggles the config saving in the UI
+Setting = <bool> - Toggle to show the setting on the window
 RainbowMainFrame = <bool> - This if you want a RBG Stroke for MainFrame
 RainbowTitle = <bool> - This if you want a RBG Stroke for Title
 RainbowSubTitle = <bool> - This if you want a RBG Stroke for SubName
-ToggleIcon = <string> - URL to the image you want displayed on the toggle window.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-CloseCallback = <function> - Function to execute when the window is closed.
+ToggleIcon = <string> - URL to the image you want displayed on the toggle window
+ConfigFolder = <string> - The name of the folder where the configs are saved
+CloseCallback = <function> - Function to execute when the window is closed
 ]]
 ```
 
@@ -49,8 +49,8 @@ local Tab = Window:MakeTab({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
+Name = <string> - The name of the tab
+Icon = <string> - The icon of the tab
 ]]
 ```
 
@@ -62,7 +62,7 @@ local Section = Tab:AddSection({
 })
 
 --[[
-Name = <string> - The name of the section.
+Name = <string> - The name of the section
 ]]
 ```
 
@@ -76,10 +76,10 @@ splib:MakeNotification({
 })
 
 --[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
+Title = <string> - The title of the notification
+Content = <string> - The content of the notification
+Image = <string> - The icon of the notification
+Time = <number> - The duration of the notfication
 ]]
 ```
 ## Creating a Button
@@ -97,9 +97,9 @@ Tab:AddButton({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the button.
-Desc = <string> - This is to write a description of what he's doing.
-Callback = <function> - The function of the button.
+Name = <string> - The name of the button
+Desc = <string> - This is to write a description of what he's doing
+Callback = <function> - The function of the button
 ]]
 ```
 
@@ -120,11 +120,11 @@ Tab:AddToggle({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the toggle.
-Desc = <string> - This is to write a description of what he's doing.
-Default = <bool> - The default value of the toggle.
-Flag <string> - This is if you want to save the value even after the library is closed.
-Callback = <function> - The function of the toggle.
+Name = <string> - The name of the toggle
+Desc = <string> - This is to write a description of what he's doing
+Default = <bool> - The default value of the toggle
+Flag <string> - This is if you want to save the value even after the library is closed
+Callback = <function> - The function of the toggle
 ]]
 ```
 
@@ -150,14 +150,14 @@ Tab:AddColorpicker({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the colorpicker.
-Default = <color3> - The default value of the colorpicker.
-Flag <string> - This is if you want to save the value even after the library is closed.
-Callback = <function> - The function of the colorpicker.
+Name = <string> - The name of the colorpicker
+Default = <color3> - The default value of the colorpicker
+Flag <string> - This is if you want to save the value even after the library is closed
+Callback = <function> - The function of the colorpicker
 ]]
 ```
 
-## Setting the color picker's value
+## change current Colorpicker value
 ```lua
 ColorPicker:Set(Color3.fromRGB(255,255,255))
 ```
@@ -182,14 +182,14 @@ Tab:AddSlider({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the slider.
-Min = <number> - The minimal value of the slider.
-Max = <number> - The maxium value of the slider.
-Increment = <number> - How much the slider will change value when dragging.
-Default = <number> - The default value of the slider.
-ValueName = <string> - The text after the value number.
-Flag <string> - This is if you want to save the value even after the library is closed.
-Callback = <function> - The function of the slider.
+Name = <string> - The name of the slider
+Min = <number> - The minimal value of the slider
+Max = <number> - The maxium value of the slider
+Increment = <number> - How much the slider will change value when dragging
+Default = <number> - The default value of the slider
+ValueName = <string> - The text after the value number
+Flag <string> - This is if you want to save the value even after the library is closed
+Callback = <function> - The function of the slider
 ]]
 ```
 ## Change Slider Value
@@ -277,12 +277,12 @@ Tab:AddTextbox({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the textbox.
-Desc = <string> - This is to write a description of what he's doing.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Flag <string> - This is if you want to save the value even after the library is closed.
-Callback = <function> - The function of the textbox.
+Name = <string> - The name of the textbox
+Desc = <string> - This is to write a description of what he's doing
+Default = <string> - The default value of the textbox
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus
+Flag <string> - This is if you want to save the value even after the library is closed
+Callback = <function> - The function of the textbox
 ]]
 ```
 ## Creating a Keybind
@@ -303,12 +303,12 @@ Tab:AddBind({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the bind.
-Desc = <string> - This is to write a description of what he's doing.
-Default = <keycode> - The default value of the bind.
-Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false.
-Flag <string> - This is if you want to save the value even after the library is closed.
-Callback = <function> - The function of the bind.
+Name = <string> - The name of the bind
+Desc = <string> - This is to write a description of what he's doing
+Default = <keycode> - The default value of the bind
+Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false
+Flag <string> - This is if you want to save the value even after the library is closed
+Callback = <function> - The function of the bind
 ]]
 ```
 ## Chaning the value of a bind
@@ -325,6 +325,7 @@ Tab:AddDropdown({
     Name = "Dropdown",
     Desc = "What is this dropdown do?",
     Default = "1",
+    MultiSelect = false,
     Options = {"1", "2", "3"},
     Flag = "dropdownsave",
     Callback = function(value)
@@ -335,12 +336,13 @@ Tab:AddDropdown({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
-Name = <string> - The name of the dropdown.
-Desc = <string> - This is to write a description of what he's doing.
-Default = <string> - The default value of the dropdown.
-Options = <table> - The options in the dropdown.
-Flag <string> - This is if you want to save the value even after the library is closed.
-Callback = <function> - The function of the dropdown.
+Name = <string> - The name of the dropdown
+Desc = <string> - This is to write a description of what he's doing
+Default = <string> - The default value of the dropdown
+MultiSelect = <bool> - This if you want to choose multible options
+Options = <table> - The options in the dropdown
+Flag <string> - This is if you want to save the value even after the library is closed
+Callback = <function> - The function of the dropdown
 ]]
 ```
 ## Adding a set of new Dropdown buttons to an existing menu (Refresh a existing dropdown)
