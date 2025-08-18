@@ -11,8 +11,6 @@ local splib = loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/
 local Window = splib:MakeWindow({
  Name = "SP Library v2",
  SubTitle = "by splib",
- HidePremium = false,
- SaveConfig = true,
  Setting = true,
  Toggle = true,
  RainbowMainFrame = false,
@@ -25,8 +23,6 @@ local Window = splib:MakeWindow({
 --[[
 Name = <string> - The name of the UI
 SubTitle = <string> - The sub name of the UI
-HidePremium = <bool> - Whether or not the user details shows Premium status or not
-SaveConfig = <bool> - Toggles the config saving in the UI
 Setting = <bool> - Toggle to show the setting on the window
 Toggle <bool> - This if you want enable/disable toggle
 RainbowMainFrame = <bool> - This if you want a RBG Stroke for MainFrame
