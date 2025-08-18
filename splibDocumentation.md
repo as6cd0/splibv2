@@ -29,7 +29,6 @@ RainbowMainFrame = <bool> - This if you want a RBG Stroke for MainFrame
 RainbowTitle = <bool> - This if you want a RBG Stroke for Title
 RainbowSubTitle = <bool> - This if you want a RBG Stroke for SubName
 ToggleIcon = <string> - URL to the image you want displayed on the toggle window
-ConfigFolder = <string> - The name of the folder where the configs are saved
 CloseCallback = <function> - Function to execute when the window is closed
 ]]
 ```
