@@ -14,11 +14,11 @@ local Window = splib:MakeWindow({
  HidePremium = false,
  SaveConfig = true,
  Setting = true,
+ Toggle = true,
  RainbowMainFrame = false,
  RainbowTitle = false,
  RainbowSubTitle = false,
  ToggleIcon = "rbxassetid://83114982417764",
- ConfigFolder = "SP_Library",
  CloseCallback = true
 })
 
@@ -28,6 +28,7 @@ SubTitle = <string> - The sub name of the UI
 HidePremium = <bool> - Whether or not the user details shows Premium status or not
 SaveConfig = <bool> - Toggles the config saving in the UI
 Setting = <bool> - Toggle to show the setting on the window
+Toggle <bool> - This if you want enable/disable toggle
 RainbowMainFrame = <bool> - This if you want a RBG Stroke for MainFrame
 RainbowTitle = <bool> - This if you want a RBG Stroke for Title
 RainbowSubTitle = <bool> - This if you want a RBG Stroke for SubName
@@ -57,9 +58,7 @@ Icon = <string> - The icon of the tab
 
 ## Creating a Section
 ```lua
-local Section = Tab:AddSection({
-	Name = "Section"
-})
+Tab:AddSection(Section)
 
 --[[
 Name = <string> - The name of the section
@@ -69,6 +68,7 @@ Name = <string> - The name of the section
 ## Create a Notification
 ```lua
 splib:MakeNotification({
+
 	Name = "Title",
 	Content = "Hello",
 	Image = "rbxassetid://6026568198",
@@ -80,6 +80,36 @@ Title = <string> - The title of the notification
 Content = <string> - The content of the notification
 Image = <string> - The icon of the notification
 Time = <number> - The duration of the notfication
+]]
+```
+
+## Create a Dialog
+```lua
+Window:Dialog({
+   IsMobile = false,
+   IsPC = false,
+   Title = "Test",
+   Text = "Do you want test??",
+   Options = {
+	 {"Yes", function()
+     print("YEAHH THAT SO HOT")
+	splib:MakeNotification{
+    Name    = "BRUHH",
+    Content = "WHY YOU WANT TEST?? ITS WORK",
+    Image   = "rbxassetid://6026568198",
+    Time    = 5,
+}
+				end},
+				{"Bruh no"}
+			}
+		})
+
+--[[
+IsMobile = <bool> - This is if you want to view it on mobile only
+IsPc = <bool> - This is if you want to view it on pc only
+Title = <string> - The title of the dialog
+Text = <string> - the text of the dialog
+Options = <table> - this for add options in the dialog
 ]]
 ```
 ## Creating a Button
