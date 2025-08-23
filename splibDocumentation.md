@@ -13,6 +13,7 @@ local Window = splib:MakeWindow({
  SubTitle = "by splib",
  Setting = true,
  Toggle = true,
+ Icon = "rbxassetid://83114982417764",
  RainbowMainFrame = false,
  RainbowTitle = false,
  RainbowSubTitle = false,
@@ -25,6 +26,7 @@ Name = <string> - The name of the UI
 SubTitle = <string> - The sub name of the UI
 Setting = <bool> - Toggle to show the setting on the window
 Toggle <bool> - This if you want enable/disable toggle
+Icon <string> - This if you want add a icon for your script
 RainbowMainFrame = <bool> - This if you want a RBG Stroke for MainFrame
 RainbowTitle = <bool> - This if you want a RBG Stroke for Title
 RainbowSubTitle = <bool> - This if you want a RBG Stroke for SubName
