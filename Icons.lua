@@ -1,4 +1,4 @@
-local Icons = {
+return {
 			["accessibility"] = "rbxassetid://10709751939",
 			["activity"] = "rbxassetid://10709752035",
 			["airvent"] = "rbxassetid://10709752131",
@@ -818,5 +818,3 @@ local Icons = {
 			["zoomin"] = "rbxassetid://10747384552",
 			["zoomout"] = "rbxassetid://10747384679"
 		}
-
-return Icons
