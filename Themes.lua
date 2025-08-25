@@ -167,3 +167,4 @@
 			["Color Text"] = Color3.fromRGB(0, 255, 100),
 			["Color Dark Text"] = Color3.fromRGB(0, 150, 0)
 		}
+}
