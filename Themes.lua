@@ -1,4 +1,4 @@
-	local Themes = {
+	return {
 		Red = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(13, 13, 13)),
@@ -167,6 +167,3 @@
 			["Color Text"] = Color3.fromRGB(0, 255, 100),
 			["Color Dark Text"] = Color3.fromRGB(0, 150, 0)
 		}
-}
-
-return Themes
