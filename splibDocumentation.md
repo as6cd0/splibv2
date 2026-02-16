@@ -13,6 +13,7 @@ local Window = splib:MakeWindow({
  SubTitle = "by splib",
  Setting = true,
  Toggle = true,
+ IsPremium = false,
  Icon = "rbxassetid://83114982417764",
  RainbowMainFrame = false,
  RainbowTitle = false,
@@ -25,6 +26,7 @@ local Window = splib:MakeWindow({
 Name = <string> - The name of the UI
 SubTitle = <string> - The sub name of the UI
 Setting = <bool> - Toggle to show the setting on the window
+IsPremium = <bool> - If the player is has premium or not
 Toggle <bool> - This if you want enable/disable toggle
 Icon <string> - This if you want add a icon for your script
 RainbowMainFrame = <bool> - This if you want a RBG Stroke for MainFrame
@@ -114,6 +116,8 @@ Options = <table> - this for add options in the dialog
 Tab:AddButton({
    IsMobile = false,
    IsPC = false,
+   PremiumOnly = true,
+   HidePremium = false,
    Name = "Button",
    Desc = "What is this button do?",
 	Callback = function()
@@ -124,6 +128,8 @@ Tab:AddButton({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
+PremiumOnly = <bool> - This if you want this feature work with premium only
+HidePremium = <bool> - This if you want show or hide with a normal players
 Name = <string> - The name of the button
 Desc = <string> - This is to write a description of what he's doing
 Callback = <function> - The function of the button
@@ -135,6 +141,8 @@ Callback = <function> - The function of the button
 Tab:AddToggle({
    IsMobile = false,
    IsPC = false,
+   PremiumOnly = true,
+   HidePremium = false,
    Name = "Toggle",
    Desc = "What is this toggle do?",
    Default = false,
@@ -147,6 +155,8 @@ Tab:AddToggle({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
+PremiumOnly = <bool> - This if you want this feature work with premium only
+HidePremium = <bool> - This if you want show or hide with a normal players
 Name = <string> - The name of the toggle
 Desc = <string> - This is to write a description of what he's doing
 Default = <bool> - The default value of the toggle
@@ -166,6 +176,8 @@ Toggle:Set(true)
 Tab:AddColorpicker({
   IsMobile = false,
   IsPC = false,
+  PremiumOnly = true,
+  HidePremium = false,
   Name = "Colorpicker",
   Default = Color3.fromRGB(255, 0, 0),
   Flag = "ColorpickerSave",
@@ -177,6 +189,8 @@ Tab:AddColorpicker({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
+PremiumOnly = <bool> - This if you want this feature work with premium only
+HidePremium = <bool> - This if you want show or hide with a normal players
 Name = <string> - The name of the colorpicker
 Default = <color3> - The default value of the colorpicker
 Flag <string> - This is if you want to save the value even after the library is closed
@@ -194,6 +208,8 @@ ColorPicker:Set(Color3.fromRGB(255,255,255))
 Tab:AddSlider({
    IsMobile = false,
    IsPC = false,
+   PremiumOnly = true,
+   HidePremium = false,
    Name = "Slider",
    Min = 0,
    Max = 20,
@@ -209,6 +225,8 @@ Tab:AddSlider({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
+PremiumOnly = <bool> - This if you want this feature work with premium only
+HidePremium = <bool> - This if you want show or hide with a normal players
 Name = <string> - The name of the slider
 Min = <number> - The minimal value of the slider
 Max = <number> - The maxium value of the slider
@@ -291,6 +309,8 @@ CoolParagraph:Set("Paragraph New", "New Paragraph Content")
 Tab:AddTextbox({
   IsMobile = false,
   IsPC = false,
+  PremiumOnly = true,
+  HidePremium = false,
   Name = "Textbox",
   Desc = "What is this textbox do?",
   Default = "default box input",
@@ -304,6 +324,8 @@ Tab:AddTextbox({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
+PremiumOnly = <bool> - This if you want this feature work with premium only
+HidePremium = <bool> - This if you want show or hide with a normal players
 Name = <string> - The name of the textbox
 Desc = <string> - This is to write a description of what he's doing
 Default = <string> - The default value of the textbox
@@ -317,6 +339,8 @@ Callback = <function> - The function of the textbox
 Tab:AddBind({
   IsMobile = false,
   IsPC = false,
+  PremiumOnly = true,
+  HidePremium = false,
   Name = "Bind",
   Desc = "What is this bind do?",
   Default = Enum.KeyCode.E,
@@ -330,6 +354,8 @@ Tab:AddBind({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
+PremiumOnly = <bool> - This if you want this feature work with premium only
+HidePremium = <bool> - This if you want show or hide with a normal players
 Name = <string> - The name of the bind
 Desc = <string> - This is to write a description of what he's doing
 Default = <keycode> - The default value of the bind
@@ -349,6 +375,8 @@ Bind:Set(Enum.KeyCode.E)
 Tab:AddDropdown({
     IsMobile = false,
     IsPC = false,
+    PremiumOnly = true,
+    HidePremium = false,
     Name = "Dropdown",
     Desc = "What is this dropdown do?",
     Default = "1",
@@ -363,6 +391,8 @@ Tab:AddDropdown({
 --[[
 IsMobile = <bool> - This is if you want to view it on mobile only
 IsPc = <bool> - This is if you want to view it on pc only
+PremiumOnly = <bool> - This if you want this feature work with premium only
+HidePremium = <bool> - This if you want show or hide with a normal players
 Name = <string> - The name of the dropdown
 Desc = <string> - This is to write a description of what he's doing
 Default = <string> - The default value of the dropdown
