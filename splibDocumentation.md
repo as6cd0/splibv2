@@ -12,6 +12,10 @@ local Window = splib:MakeWindow({
  Name = "SP Library v2",
  SubTitle = "by splib",
  Setting = true,
+ Intro = true,
+ IntroText = "SP Hub Loading",
+ IntroIcon = "rbxassetid://83114982417764",
+ IntroSpeed = 1,
  Toggle = true,
  IsPremium = false,
  Icon = "rbxassetid://83114982417764",
@@ -26,6 +30,10 @@ local Window = splib:MakeWindow({
 Name = <string> - The name of the UI
 SubTitle = <string> - The sub name of the UI
 Setting = <bool> - Toggle to show the setting on the window
+Intro = <bool> - Enable/disable intro loading
+IntroText = <string> - Intro title text
+IntroIcon = <string> - Intro icon asset id
+IntroSpeed = <number> - Intro speed multiplier
 IsPremium = <bool> - If the player is has premium or not
 Toggle <bool> - This if you want enable/disable toggle
 Icon <string> - This if you want add a icon for your script
