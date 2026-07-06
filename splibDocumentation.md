@@ -390,6 +390,7 @@ Tab:AddDropdown({
     Default = "1",
     MultiSelect = false,
     Options = {"1", "2", "3"},
+    PremiumOptions = {"2"},
     Flag = "dropdownsave",
     Callback = function(value)
         print(value)
@@ -406,6 +407,7 @@ Desc = <string> - This is to write a description of what he's doing
 Default = <string> - The default value of the dropdown
 MultiSelect = <bool> - This if you want to choose multible options
 Options = <table> - The options in the dropdown
+PremiumOptions = <table> - For adding custom premium options
 Flag <string> - This is if you want to save the value even after the library is closed
 Callback = <function> - The function of the dropdown
 ]]
